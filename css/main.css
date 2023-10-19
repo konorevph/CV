@@ -1,7 +1,204 @@
-img {
-    width: 100px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-body {
-    width: 1000px;
+main {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+h5 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+section {
+    padding: 50px;
+}
+
+.personal-info {
+    height: 100vh;
+    padding: 0;
+    display: flex; /* Используем Flexbox для размещения элементов в ряд */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    text-align: center; /* Центрируем текст по горизонтали */
+    justify-content: center;
+}
+
+.personal-info figure {
+    padding-bottom: 10%;
+    margin: 0;
+}
+
+.personal-info img {
+    width: 150px; /* Размер фотографии */
+    display: block;
+    margin-right: 20px; /* Добавляем отступ справа для разделения фотографии и текста */
+}
+
+.info-text {
+    padding-bottom: 10%;
+    text-align: left; /* Выравниваем текст влево */
+}
+
+
+
+
+
+/* Биография */
+
+
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    text-align: justify;
+}
+
+.biography p {
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0 0 0;
+}
+
+
+
+/*Контакты*/
+
+
+.contacts {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.contacts ul {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts li {
+    margin: 20px;
+}
+
+/* Стили для обычной ссылки */
+.contacts li a {
+    text-decoration: none;
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Добавляет плавную анимацию при изменении стилей */
+  }
+  
+  /* Анимация при наведении */
+  .contacts li a:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.1); /* Увеличивает размер при наведении */
+  }
+  
+  /* Анимация при клике */
+  .contacts li a:active {
+    background-color: #e74c3c;
+    color: #fff;
+    transform: scale(0.9); /* Уменьшает размер при клике */
+    border-color: #e74c3c;
+  }
+
+
+/* Расширенная информация*/
+
+
+
+.extended-info {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 100px;
+}
+
+.extended-info p {
+    font-size: 14px;
+}
+
+.extended-info div ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
+.job, .education {
+    /* background-color: #fff;
+    border: 1px solid #e1e1e1; */
+    border-radius: 5px;
+}
+
+.job-duration, .education-duration {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.job-description, .education-description {
+    color: #444;
+    margin: 10px 0 0 0;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #e2e2e2;
+    height: 15px;
+    border-radius: 10px;
+    margin: 0 20px 0 0;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #3498db; /* Цвет для заполнения шкалы */
+    border-radius: 10px;
 }
