@@ -1,0 +1,64 @@
+.equalizer-ring {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top:0;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 30%;
+    position: absolute;
+    animation: spin 10s linear infinite, change 5s infinite;
+}
+  
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes change {
+    0% {
+        border-color: #bbe4ff;
+        /* background-color: #3498db; */
+        width: 500;
+        height: 500px;
+    }
+    25% {
+        border-color: #ffc4bd;
+        /* background-color: #e74c3c; */
+        width: 600px;
+        height: 600px;
+    }
+    50% {
+        border-color: #c4ffdd;
+        /* background-color: #27ae60; */
+        width: 400px;
+        height: 400px;
+    }
+    75% {
+        border-color: #f1c40f;
+        /* background-color: #f1c40f; */
+        width: 650px;
+        height: 650px;
+    }
+    100% {
+        border-color: #c7e9ff;
+        /* background-color: #3498db; */
+        width: 500px;
+        height: 500px;
+    }
+}
+  

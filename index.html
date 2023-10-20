@@ -6,89 +6,123 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/equalizer.css">
 </head>
 <body>
     <header>
         <nav></nav>
     </header>
+    
     <main>
-        <section class="name-img">
-            <h1>Konorev<br>Roman</h1>
+        <section class="personal-info">
+
+            <div class="equalizer-ring">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <div class="circle" id="circle3"></div>
+                <div class="circle" id="circle3"></div>
+                <div class="circle" id="circle3"></div>
+                <div class="circle" id="circle3"></div>
+            </div>
+            <script src="js/equalizer.js"></script>
+
             <figure>
                 <picture>
-                    <source srcset="photo1x.jpg 1x, photo2x.jpg 2x, photo3x.jpg 3x" type="image/jpg">
-                    <source srcset="photo1x.webp 1x, photo2x.webp 2x, photo3x.webp 3x" type="image/webp">
+                    <source srcset="./img/photo1x.jpg 1x, ./img/photo2x.jpg 2x, ./img/photo3x.jpg 3x" type="image/jpg">
+                    <source srcset="./img/photo1x.webp 1x, ./img/photo2x.webp 2x, ./img/photo3x.webp 3x" type="image/webp">
+                    <img src="./img/photo3x.jpg" alt="Фото"/>
                 </picture>
-                <img src="./img/photo3x.jpg"/>
+                <!-- <img src="./img/photo3x.jpg" alt="Фото"/> -->
             </figure>
-            <p>WEB DEVELOPER</p>
+            <div class="info-text">
+                <h1>Конорев Роман</h1>
+                <h2>Web Developer</h2>
+                <p>+7 (993) 218-3482</p>
+                <p>konorevroman@vk.com</p>
+            </div>
         </section>
-        <section class="bio">
-            <h2>About</h2>
-            <p>Junior web developer with 1 year of experience in web application development. A confident user of frontend tools (HTML, CSS, JS), SQL database, platform ASP.NET with the MVC template. Programming skills in C#, Java, PHP, Python. Able to write clear methods with clear comments understandable to the whole team. </p>
+        <section class="biography">
+            <p>Младший веб-разработчик с опытом работы в разработке веб-приложений 5 месяцев. Уверенный пользователь интерфейсных инструментов (HTML, CSS, JS), базы данных SQL, платформы ASP.NET с шаблоном MVC. Навыки программирования на C#, Java, PHP, Python. Способен писать четкие методы с четкими комментариями, понятными всей команде.</p>
         </section>
         <nav class="contacts">
             <ul>
-                <li><a href="https://konorevph.ru/">konorevph.ru</a></li>
-                <li>+7 993 218-34-82</li>
-                <li><a href="vk.com/konorevroman">vk</a></li>
+                <li><a href="https://konorevph.ru/" target="_blank">konorevph.ru</a></li>
+                <li><a href="https://vk.com/konorevroman/" target="_blank">VK</a></li>
             </ul>
         </nav>
-        <section class="more-info">
-            <div class="block-part">
-                <h2>Work Experience</h2>
-                <ul>
-                    <li>
-                        <h3>Full stack developer</h3>
-                        <p>BUMMASH <br> I participate in the web application development team for a state-owned enterprise. Working with the database, writing calculation formulas, displaying drawings and documents on the website.
-                        </p>
+        <section class="extended-info">
+            <div class="experience-info">
+                <h3>Опыт работы</h3>
+                <ul class="experience-list">
+                    <li class="job">
+                        <h4>Инженер-программист</h4>
+                        <p class="job-duration">Июнь 2023 — по настоящее время (5 месяцев)</p>
+                        <h5>ООО Завод «БУММАШ»</h5>
+                        <p class="job-description">Разработка и поддержка веб-приложений, участие во всех этапах процесса разработки.</p>
+                    </li>
+                    <li class="job">
+                        <h4>Фотограф</h4>
+                        <p class="job-duration">Октябрь 2022 — по настоящее время (1 год 1 месяц)</p>
+                        <h5>Самозанятость</h5>
+                        <p class="job-description">Сотрудничество с юридическими лицами, контракты на съёмку.</p>
                     </li>
                 </ul>
             </div>
-            <div class="block-part">
-                <h2>Education</h2>
-                <ul>
-                    <li>
-                        <h3>Software Engineer</h3>
-                        <p>ITMO<br>
-                            In the process of learning. 3rd year student. <br>
-                            Acquired skills: web development, algorithms and data structures, data analysis, machine learning and data analysis. <br>
-                            GPA 4.5
-                        </p>
+            <div class="education-info">
+                <h3>Образование</h3>
+                
+                <ul class="education-list">
+                    <li class="education">
+                        <h4>Неоконченное высшее</h4>
+                        <p class="education-duration">2021 — 2025</p>
+                        <h5>Санкт-Петербургский национальный исследовательский университет информационных технологий, механики и оптики (ИТМО)</h5>
+                        <p class="education-description">Программная инженерия и компьютерная техника, Разработка графических и веб-интерфейсов.</p>
                     </li>
                 </ul>
             </div>
-            <div class="block-part">
-                <h2>Award</h2>
+            <div class="award-info">
+                <h2>Достижения</h2>
                 <ul>
-                    <li>
-                        <h3>Web design</h3>
-                        <p>Competition of design layouts for the restaurant aggregator website.
-                        </p>
+                    <li class="award">
+                        <h4>Веб-дизайн</h4>
+                        <p>Призовое место в конкурсе дизайн проектов для аргатор расторанов</p>
                     </li>
                 </ul>
             </div>
-            <div class="block-part">
+            <div class="main-skills-info">
                 <h2>Skills</h2>
                 <ul>
-                    <li>
+                    <li class="skill">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%;"></div>
+                        </div>
                         <p>Backend</p>
                     </li>
-                    <li>
+                    <li class="skill">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
                         <p>Frontend</p>
                     </li>
-                    <li>
+                    <li class="skill">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%;"></div>
+                        </div>
                         <p>UX/UI</p>
                     </li>
-                    <li>
+                    <li class="skill">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
                         <p>VCS</p>
                     </li>
                 </ul>
             </div>
         </section>
+        
     </main>
     <footer>
-
+        
     </footer>
 </body>
 </html>
