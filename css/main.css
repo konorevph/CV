@@ -1,3 +1,7 @@
+:root {
+    --main-color: #3498db;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -120,8 +124,8 @@ section {
 /* Стили для обычной ссылки */
 .contacts li a {
     text-decoration: none;
-    color: #3498db;
-    border: 2px solid #3498db;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
     padding: 10px 20px;
     display: inline-block;
     border-radius: 5px;
@@ -130,7 +134,7 @@ section {
   
   /* Анимация при наведении */
   .contacts li a:hover {
-    background-color: #3498db;
+    background-color: var(--main-color);
     color: #fff;
     transform: scale(1.1); /* Увеличивает размер при наведении */
   }
@@ -163,6 +167,11 @@ section {
 .extended-info div ul li {
     margin: 10px;
     padding: 10px;
+}
+
+.extended-item-info {
+    border-left: solid 2px var(--main-color);
+    padding-left: 10px;
 }
 
 .job, .education {
